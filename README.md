@@ -1,1 +1,1 @@
-# qa-rebuild-journal
+# QA Journal
