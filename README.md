@@ -427,3 +427,67 @@ Simple	1
 
 <img width="468" height="643" alt="image" src="https://github.com/user-attachments/assets/d25c603f-1659-42c7-88e0-c8c9ca6b5b12" />
 
+
+
+
+
+
+Java
+
+JDK- consists of classes, methods, tools, compiler, debuggers, runtime env(JRE)
+JRE- only for running the code
+
+<img width="998" height="816" alt="image" src="https://github.com/user-attachments/assets/15f58c2e-8b14-490c-bdfc-183baf75a565" />
+
+
+Run in Terminal to check isntalled Java: java -version
+
+Oracle:
+1. paid JDK: commercial
+2. OpenJDK: open source
+
+Set up the System variable in Windows- these tells the external programs like Docker, Jenksins(based on Java) to indicate where Java is installed.
+1. JAVA_HOME
+2. Path
+
+What if you only have JRE installed but not JDK?
+
+
+Test.java(Source Code) --> compilation(javac) --> bytecode/intermediate(.class file) --> JVM converts it to binary code
+JVM is OS/platform dependent, diff JVM for different OSes.
+
+<img width="843" height="554" alt="Screenshot 2026-01-16 at 10 32 08 AM" src="https://github.com/user-attachments/assets/cd2d4ae2-e662-4d38-a882-651ec51ee4a0" />
+
+.class files can run on any client machine.
+Compile time is the phase where the source code is translated into bytecode, while runtime is the phase where the bytecode is executed by the Java Virtual Machine (JVM).
+Python, Java script are runtime languages as it does not have a compiler.
+Advantage of compilation: 80% checks are done at compile-time (before we run the program).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
