@@ -46,44 +46,48 @@ Decision Table:
 -	Example 1: How to make Decision Base Table for Login Screen: 
 
 
-Conditions	Rule 1	Rule 2	Rule 3	Rule 4
-Username (T/F)	F	T	F	T
-Password (T/F)	F	F	T	T
-Output (E/H)	E	E	E	H
-
+Conditions		Rule 1	Rule 2	Rule 3	Rule 4
+Username (T/F)	F		T		F		T
+Password (T/F)	F		F		T		T	
+Output (E/H)	E		E		E		H
 
 Legend:
-●	T – Correct username/password
-●	F – Wrong username/password
-●	E – Error message is displayed
-●	H – Home screen is displayed
+- T – Correct username/password
+- F – Wrong username/password
+- E – Error message is displayed
+- H – Home screen is displayed
+
 Interpretation:
-●	Case 1 – Username and password both were wrong. The user is shown an error message.
-●	Case 2 – Username was correct, but the password was wrong. The user is shown an error message.
-●	Case 3 – Username was wrong, but the password was correct. The user is shown an error message.
-●	Case 4 – Username and password both were correct, and the user navigated to homepage
+- Case 1 – Username and password both were wrong. The user is shown an error message.
+- Case 2 – Username was correct, but the password was wrong. The user is shown an error message.
+- Case 3 – Username was wrong, but the password was correct. The user is shown an error message.
+- Case 4 – Username and password both were correct, and the user navigated to homepage
+
 While converting this to test case, we can create 2 scenarios ,
-●	Enter correct username and correct password and click on login, and the expected result will be the user should be navigated to homepage
+- Enter correct username and correct password and click on login, and the expected result will be the user should be navigated to homepage
 And one from the below scenario
-●	Enter wrong username and wrong password and click on login, and the expected result will be the user should get an error message
-●	Enter correct username and wrong password and click on login, and the expected result will be the user should get an error message
-●	Enter wrong username and correct password and click on login, and the expected result will be the user should get an error message
+- Enter wrong username and wrong password and click on login, and the expected result will be the user should get an error message
+- Enter correct username and wrong password and click on login, and the expected result will be the user should get an error message
+- Enter wrong username and correct password and click on login, and the expected result will be the user should get an error message
+
 Why Decision Table Testing is Important?
 Decision Table Testing is Important because it helps to test different combinations of conditions and provide better test coverage for complex business logic. When testing the behavior of a large set of inputs where system behaviour differs with each set of input, decision table testing provides good coverage and the representation is simple so it is easy to interpret and use.
 In Software Engineering, boundary value and equivalent partition are other similar techniques used to ensure better coverage. They are used if the system shows the same behavior for a large set of inputs. However, in a system where for each set of input values the system behavior is different, boundary value and equivalence partitioning techniques are not effective in ensuring good test coverage.
+
 Advantages of Decision Table Testing
-●	When the system behavior is different for different input and not same for a range of inputs, both equivalent partitioning, and boundary value analysis won't help, but decision table can be used.
-●	The representation is simple so that it can be easily interpreted and is used for development and business as well.
-●	This table will help to make effective combinations and can ensure a better coverage for testing
-●	Any complex business conditions can be easily turned into decision tables
-●	In a case we are going for 100% coverage typically when the input combinations are low, this technique can ensure the coverage.
+- When the system behavior is different for different input and not same for a range of inputs, both equivalent partitioning, and boundary value analysis won't help, but decision table can be used.
+- The representation is simple so that it can be easily interpreted and is used for development and business as well.
+- This table will help to make effective combinations and can ensure a better coverage for testing
+- Any complex business conditions can be easily turned into decision tables
+- In a case we are going for 100% coverage typically when the input combinations are low, this technique can ensure the coverage.
+
 # State Transition testing: 
 -	State Transition Testing is a black box testing technique in which changes made in input conditions cause state changes or output changes in the Application under Test(AUT). State transition testing helps to analyze behaviour of an application for different input conditions. Testers can provide positive and negative input test values and record the system behavior. 
 
 -	It is the model on which the system and the tests are based. Any system where you get a different output for the same input, depending on what has happened before, is a finite state system.
 -	Input has to be in sequential order. 
 
-Use of State Transition: 
+**Use of State Transition:** 
 -	This can be used when a tester is testing the application for a finite set of input values.
 -	When the tester is trying to test a sequence of events that occur in the application under test. I.e., this will allow the tester to test the application behavior for a sequence of input values.
 -	When the system under test has a dependency on the events/values in the past.
@@ -121,7 +125,7 @@ Consider an OTP number that contains only 6 digit number, greater and even less 
 
 <img width="482" height="283" alt="image" src="https://github.com/user-attachments/assets/bea0cd91-8611-4c58-acea-3071fba5f161" />
 
-Boundary Value Analysis
+**Boundary Value Analysis**
 Boundary Value Analysis is based on testing the boundary values of valid and invalid equivalence class partitions. The behavior at the edge of the equivalence partition is more likely to be incorrect than the behavior within the partition, so boundaries are an area where testing is likely to yield defects.
 
 Example: Consider a system that accepts ages from 18 to 56.
@@ -153,20 +157,20 @@ Mitigation Strategies: Create plans to mitigate these risks and delegate respons
 
 
 c. Test Environment: The test environment standards.
-Identify and document the necessary tools for test management, automation, performance testing, and defect tracking.
-Configure the test environment(s), including hardware, software, network configurations, and data needs.
-Define infrastructure needs such as OS, browsers, mobile devices, or cloud setup
-Configure test environments to match production in terms of integrations, services, and network access
-Prepare test data sets for positive, negative, edge, and boundary scenarios
-Use data masking or anonymization techniques for privacy and compliance when using real user data
-Automate environment provisioning and data refresh where possible to reduce setup time
+- Identify and document the necessary tools for test management, automation, performance testing, and defect tracking.
+- Configure the test environment(s), including hardware, software, network configurations, and data needs.
+- Define infrastructure needs such as OS, browsers, mobile devices, or cloud setup
+- Configure test environments to match production in terms of integrations, services, and network access
+- Prepare test data sets for positive, negative, edge, and boundary scenarios
+- Use data masking or anonymization techniques for privacy and compliance when using real user data
+- Automate environment provisioning and data refresh where possible to reduce setup time
 
 d. Test Schedule
-Break down test phases with start and end dates
-Add time buffers for bug fixes, retesting, and environment issues
-Align testing milestones with development sprints or release windows
-Track dependencies like environment readiness or third-party system availability
-Use Gantt charts or task boards for visibility and progress tracking
+- Break down test phases with start and end dates
+- Add time buffers for bug fixes, retesting, and environment issues
+- Align testing milestones with development sprints or release windows
+- Track dependencies like environment readiness or third-party system availability
+- Use Gantt charts or task boards for visibility and progress tracking
 
 e. Test Management and Defect Management
  
@@ -330,8 +334,6 @@ Production hotfix
 Top 5 situation based testing questions
 
 SLAs
-
-
 
 
 # Verification vs Validation: 
