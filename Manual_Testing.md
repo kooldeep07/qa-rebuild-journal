@@ -15,7 +15,7 @@ User Stories
 Tasks
 Bugs
 
-1. Requirement Analysis
+1. ##Requirement Analysis
 	Requirement Analysis is the first phase where the QA/testing team understands what needs to be tested. It involves
  -	Reviewing the software requirements document (SRD, BRD) and other related documents
  -	Interviewing stakeholders to gather additional information
